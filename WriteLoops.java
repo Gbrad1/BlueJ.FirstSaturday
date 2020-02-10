@@ -247,10 +247,9 @@ public class WriteLoops {
             w = w + 1;
             // each time through the inner loop
         }
-        System.out.println("The Sum is ");
         System.out.println(sumOfThrees);
 
-        return w;
+        return sumOfThrees;
     }
 
     // Ponder this: can all FOR loops be rewritten as WHILE loops?
@@ -260,8 +259,9 @@ public class WriteLoops {
         int w = 0;
         int sumOfThrees = 0;
 
-            for (int index : threes_array) {
+            for (int i = 0; i < threes_array.length; i++) {
             // calling
+            sumOfThrees += i;
             w = w + 1;
             // each time through the inner loop
         }
@@ -278,11 +278,10 @@ public class WriteLoops {
         int sumOfThrees = 0;
         while (sumOfThrees == 0) {
             for (int index : threes_array) {
-            // calling
+            sumOfThrees += threes_array[index];
             w = w + 1;
             // each time through the inner loop
         }
-        System.out.print("The Sum is ");
         System.out.println(sumOfThrees);
     }
         return w;
@@ -299,16 +298,19 @@ public class WriteLoops {
     public int manageYardAndJunior() {
         int w = 0;
         boolean onTime = true;
-
-        // ADD YOUR CODE here.
- 
+        boolean yardNeedsMowed = true;
+        
+        while (isSummer()) {
+        
+            if (yardNeedsMowed = true) {
+                yellAtJuniorToMowLawn();
             // be sure to call
             w = w + 1;
             // each time inside the loop
-        
-        return w;
-    }
+        } 
 
+    }  return w;
+}
     String voteTallies[] = { "Lincoln", "Washington", "Adams", "Lincoln", "Washington", "Adams", "Lincoln",
             "Washington", "Adams", "Lincoln", "Washington", "Adams", "Roosevelt" };
 
@@ -317,12 +319,12 @@ public class WriteLoops {
     public int tallyVote1() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
-
- 
+        for (int i = 0; i < numberOfVotes; i++) {
+            System.out.println(i);
             // calling
             w = w + 1;
             // each time through the inner loop
-        
+        }
         return w;
     }
 
@@ -332,12 +334,14 @@ public class WriteLoops {
     public int tallyVote2() {
         int w = 0;
         int numberOfVotes = voteTallies.length;
-
-
+        int i = 0;
+        while (i < numberOfVotes) {
+            System.out.println(i);
             // calling
             w = w + 1;
+            i++;
             // each time through the inner loop
-        
+        }
         return w;
     }
 

@@ -135,10 +135,31 @@ public class WriteLoopsTest
     }
     
     @Test
-    public void TestFoo()
+    public void TestRewriteFooAsFor()
     {
         WriteLoops writeLoo1 = new WriteLoops();
-        assertEquals(7, writeLoo1.foo());
+        assertEquals(7, writeLoo1.rewriteFooAsFor());
+    }
+    
+    @Test
+    public void TestRewriteFooAsWhile()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.rewriteFooAsWhile());
+    }
+    
+    @Test
+    public void TestTallyVote1()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(13, writeLoo1.tallyVote1());
+    }
+    
+    @Test
+    public void TestTallyVote2()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(13, writeLoo1.tallyVote2());
     }
 }
 
