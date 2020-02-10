@@ -242,14 +242,14 @@ public class WriteLoops {
         int sumOfThrees = 0;
         // this is a so called Enhanced for loop
         for (int index : threes_array) {
-            sumOfThrees += threes_array[index];
+            sumOfThrees += index;
             // calling
             w = w + 1;
             // each time through the inner loop
         }
         System.out.println(sumOfThrees);
 
-        return sumOfThrees;
+        return w;
     }
 
     // Ponder this: can all FOR loops be rewritten as WHILE loops?
@@ -278,7 +278,7 @@ public class WriteLoops {
         int sumOfThrees = 0;
         while (sumOfThrees == 0) {
             for (int index : threes_array) {
-            sumOfThrees += threes_array[index];
+            sumOfThrees += index;
             w = w + 1;
             // each time through the inner loop
         }

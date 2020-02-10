@@ -161,6 +161,13 @@ public class WriteLoopsTest
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(13, writeLoo1.tallyVote2());
     }
+    
+    @Test
+    public void TestFoo()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.foo());
+    }
 }
 
 
