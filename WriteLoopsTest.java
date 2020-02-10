@@ -47,12 +47,14 @@ public class WriteLoopsTest
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(5, writeLoo1.oneToFive());
     }
+    
     @Test
     public void TestOneToTen()
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(10, writeLoo1.oneToTen());
     }
+    
     @Test
     public void TestStartAtTwentyOne()
     {
@@ -123,6 +125,20 @@ public class WriteLoopsTest
     {
         WriteLoops writeLoo1 = new WriteLoops();
         assertEquals(3, writeLoo1.checkServerStatus());
+    }
+    
+    @Test
+    public void TestLoop50By70()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.loop50by7());
+    }
+    
+    @Test
+    public void TestFoo()
+    {
+        WriteLoops writeLoo1 = new WriteLoops();
+        assertEquals(7, writeLoo1.foo());
     }
 }
 
